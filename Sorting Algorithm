@@ -1,0 +1,19 @@
+# num=[15,25,27,94,67,51,30]
+numbers=[]
+
+length=int(input("How many number of value to be Enter :- "))
+
+for i in range(length):
+    number=int(input("Enter the Number :".format(i + 1)))
+    numbers.append(number)
+
+
+for i in range(length-1):
+    for j in range(i+1,length):
+        if numbers[i] > numbers[j]:
+            numbers[i], numbers[j] = numbers[j], numbers[i]
+
+print(numbers)
+    
+        
+    
